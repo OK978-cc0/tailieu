@@ -1,0 +1,26 @@
+Khi dùng suggester trong metasploit để scan lỗ hổng:
+* glibc_realpath_priv_esc
+---Kiểm tra lỗ hổng
+	Bước 1: 	ldd --version
+		/lib/x86_64-linux-gnu/libc.so.6 hoặc /lib64/libc.so.6
+		getconf GNU_LIBC_VERSION
+	Bước 2: so sánh phiên bản và tìm kiếm lỗ hổng của nó
+	Bước 3: khai thác
+
+		
++ Là lỗ hổng bảo mật nghiêm trọng liên quan đến thư viện GNU C Library (glibc)
++ Hàm "realpath": trong glibc, hàm "realpath" được sử dụng để chuyển đổi một đường dẫn tập tin (file path) thành một đường dẫn tuyệt đối (absolute path), loại bỏ các yêu tố như ".." hoặc "."
++ Lỗi bảo mật: lỗ hổng xuất hiện khi hàm "realpath" xử lý các đường dẫn được tạo ra bởi người dùng không đáng tin cậy, đặc biệt trong môi trường có quyền truy cập hạn chế
++ Kẻ tấn công có thể tạo ra một đường dẫn đặc biệtvà gửi nó cho một ứng dụng sử dụng hàm "realpath" mà không kiểm tra cẩn thận đầu vào
+
+* CVE-2020-17136: 
+---Kiểm tra lỗ hổng:
+	Bước 1: ps: Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
+--> Lệnh này sẽ hiển thị tên, phiên bản và thông tin chi tiết về phiên bản Exchange Server đang chạy.
+	Bước 2: Đối chiếu với thông tin lỗ hổng từ các tài liệu bảo mật từ Microsoft hoặc CVE để xem Exchange Server có nằm trong danh sách các bị ảnh hưởng
+	Bước 3: tiến hành khai thác 
+
++ là một lỗ hổng bảo mật liên quan đến Microsoft Exchange Server, xảy ra do việc xử lý không an toàn của dữ liệu đầu vào trong quá trình xử lý yêu cầu HTTP
++ Lỗ hổng tồn tại trong cách MES xử lý một loại yêu cầu đặc biệt trong giao thức HTTP, xảy ra ở thành phần xử lý dữ liệu đầu vào không đầy đủ, dẫn đến việc máy chủ có thể thực thi mã không an toàn
++ Kẻ tấn công tạo và gửi một yêu cầu HTTP đặc biệt được chế tạo riêng để khai thác lỗ hổng này
++ Khi MES nhận được yêu cầu, do việc kiểm tra đầu vào không đầy đủ, server có thể không nhận ra rằng yêu cầu này có chứa mã độc. 
