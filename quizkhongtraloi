@@ -1,0 +1,83 @@
+5. In windows: what is the advantage of persistence via Scheduled task?
+a. High privilege backup session.
+b. Can decide exactly when the payload run.
+c. Not creating log when create, or start.
+d. None of them.
+
+6. What technique is usually used when we want to persist the web server?
+a. Create new system account.
+b. Drop a webshell.
+c. Open bind connection port.
+d. All of them.
+
+7. In windows: what is the disadvantage of persistence via Scheduled task?
+a. Low privilege backup session.
+b. Can not decide exactly when the service run.
+c. Creating lots of log when create, or start.
+d. The payload must have right format for scheduled task.
+
+8. What do we need to do when we want to create a new local account and persist via RDP?
+a. Create a account with hidden username, and complex password.
+b. Just create valid a account.
+c. Create account with SeBackup privilege.
+d. Create account in group Remote Desktop Users.
+
+9. Which of the followings is NOT a persistence method?
+a. Add new account with complex password.
+b. Create reverse connection to our C2 every time the system boot up.
+c. Open a random port on firewall.
+d. Drop a webshell.
+
+12. What do you do when you want your persistence payload run when the Windows start up? (multiple choice)
+a. Scripting auto exploit the target when they start up.
+b. Phishing victim to do a certain of task when they boot up the system.
+c. Using windows schedule task.
+d. Using windows service.
+
+13. In windows: what is the advantage of persistence via services?
+a. High privilege backup session.
+b. Can decide exactly when the service run.
+c. Not creating log when create, or start.
+d. None of them
+
+14. In windows: what is the disadvantage of persistence via services? (multiple choice)
+a. Low privilege backup session.
+b. Can not decide exactly when the service run.
+c. Creating lots of log when create, or start.
+d. The payload must have right format for service.
+
+15. Which following registry keys we can abuse to trigger our payload when Windows start up? (multiple choice)
+a. HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+b. HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
+c. HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon
+d. HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit
+
+16. What can we do when we want to persist linux server via SSH? (multiple choice)
+a. Create new ssh account.
+b. Drop ssh public key.
+c. Downgrade ssh version to vulnerable one.
+d. Install SSH backdoor.
+
+17. What do you do when you want your persistence payload run when the Linux start up? (multiple choice)
+a. Create a crontab.
+b. Drop payload to ".startup" folder in user's home directory.
+c. Create a start up service.
+d. None of them.
+
+18. What can we do when we want to persist web server without using webshell? (multiple choice)
+a. Create crontab to auto establish connection to our CС2.
+b. Generate a RCE bug in web server.
+c. Creating SSH account.
+d. Phishing web server's admin.
+
+19. Which of the following executable files can be abuse to persists via RDP without login in? (multiple choice)
+a. cscript.exe
+b. reg.exe
+c. sethc.exe
+d. utilman.exe
+
+20. What do you need to persist a web server by using it's Mysql DB account? (multiple choice)
+a. Just a valid account with read permission to system.
+b. Just a valid account with write permission to system.
+c. Just a valid account.
+d. DB root account.
