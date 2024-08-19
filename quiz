@@ -10,13 +10,13 @@ b. Drop a webshell.
 Open bind connection port.
 All of them.
 
-7. In windows: what is the disadvantage of persistence via Scheduled task?
+7. In windows: what is the disadvantage of persistence via Scheduled task? (khong chac)
 Low privilege backup session.
 Can not decide exactly when the service run.
 c. Creating lots of log when create, or start.
 The payload must have right format for scheduled task.
 
-8. What do we need to do when we want to create a new local account and persist via RDP?
+8. What do we need to do when we want to create a new local account and persist via RDP? (không chắc)
 a. Create a account with hidden username, and complex password.
 Just create valid a account.
 Create account with SeBackup privilege.
@@ -40,7 +40,7 @@ b. Can decide exactly when the service run.
 Not creating log when create, or start.
 None of them
 
-14. In windows: what is the disadvantage of persistence via services? (multiple choice)
+14. In windows: what is the disadvantage of persistence via services? (multiple choice) (không chắc)
 Low privilege backup session.
 Can not decide exactly when the service run.
 c. Creating lots of log when create, or start.
