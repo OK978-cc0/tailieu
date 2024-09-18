@@ -23,10 +23,5 @@ with smtplib.SMTP(smtp_server, smtp_port) as server:
   server.login(sender_email, 'your_email_password')
   # Connect to the proxy server
   server.ehlo()
-  server.esmtp_features['auth'] = 'LOGIN PLAIN'
-  # Authenticate with proxy server
-  server.docmd('AUTH', 'LOGIN', proxy_username)
-  server.docmd(proxy_password)
-  server.ehlo()
   # Send the email server.sendmail(sender_email, recipient_email, msg.as_string())
 print('Email sent successfully!')
