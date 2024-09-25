@@ -1,3 +1,5 @@
+// Project --> Properties --> Build --> Advanced --> chỉnh debug info thành None để loại bỏ file .pdb
+
 /* C:\Windows\Microsoft.NET\Framework64\v4.0.30319> csc.exe /unsafe /out:step1.exe C:\Users\User\source\repos\task2-1\task2-1\Program.cs
 https://github.com/Ormicron/csharp-ShellcodeLoader */
 using System;
