@@ -1,0 +1,45 @@
+# Script to create a beacon using an existing listener based on user input
+onBeaconCommand("create") {
+    local('$listener $cmd $beaconid');
+
+    # Parse the listener name from the command (e.g., create http)
+    $listener = substr($1, 7);
+
+    # Check if listener name is provided
+    if ($listener eq "") {
+        berror($bid, "Usage: create [listener]");
+        return;
+    }
+
+    # Check if the listener exists
+    if (!listener_exists($listener)) {
+        berror($bid, "Listener '$listener' does not exist.");
+        return;
+    }
+
+    # Get the current beacon ID
+    $beaconid = beacon_id();
+
+    # Build and execute the create command
+    $cmd = "create $listener";
+    btask($beaconid, "Creating beacon using listener '$listener'", $cmd);
+}
+
+# Helper function to check if a listener exists
+proc listener_exists {
+    local('$listeners $listener_name $exists');
+
+    $listeners = listeners();  # Get the current list of listeners
+    $listener_name = $1;
+    $exists = 0;
+
+    # Check if the given listener name exists in the list
+    foreach $listener ($listeners) {
+        if ($listener eq $listener_name) {
+            $exists = 1;
+            break;
+        }
+    }
+
+    return $exists;
+}
