@@ -1,0 +1,18 @@
+$word = New-Object -ComObject Word.Application
+$word.Visible = $false
+
+$searchString = "từ khóa cần tìm"
+$folderPath = "C:\đường_dẫn_đến_thư_mục"
+
+$files = Get-ChildItem -Path $folderPath -Filter *.docx
+
+foreach ($file in $files) {
+    $doc = $word.Documents.Open($file.FullName)
+    $content = $doc.Content.Text
+    if ($content -like "*$searchString*") {
+        Write-Output "$($file.FullName) chứa từ khóa"
+    }
+    $doc.Close()
+}
+
+$word.Quit()
