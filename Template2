@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            color: #333333;
+            line-height: 1.5;
+        }
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #e67e22;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #d35400;
+        }
+        .footer {
+            background-color: #f4f4f4;
+            padding: 15px;
+            font-size: 12px;
+            text-align: center;
+            color: #777777;
+            border-top: 1px solid #dddddd;
+        }
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Invoice Notification</h1>
+        </div>
+        <div class="content">
+            <p>Dear Valued Customer,</p>
+            <p>We are writing to inform you that your latest invoice is now available for review. To avoid any service interruptions, please review the invoice and ensure payment is processed by the due date.</p>
+            <p>For your convenience, we have provided a direct link to download your invoice below:</p>
+            <div class="cta">
+                <a href="http://malicious-link.com/invoice.pdf" class="button">Download Invoice</a>
+            </div>
+            <p>If you have any questions or concerns, please contact our billing department at <a href="mailto:billing@yourcompany.com">billing@yourcompany.com</a>.</p>
+            <p>Thank you for your prompt attention to this matter.</p>
+            <p>Best regards,<br>Finance Team</p>
+        </div>
+        <div class="footer">
+            <p>This email was sent to you by YourCompany Billing Department.</p>
+            <p>If you believe this email was sent to you in error, please contact <a href="mailto:support@yourcompany.com">support@yourcompany.com</a>.</p>
+            <p>&copy; 2024 YourCompany. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
