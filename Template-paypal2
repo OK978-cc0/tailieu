@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Claim Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            padding: 20px;
+            text-align: left;
+            background-color: #ffffff;
+        }
+        .header img {
+            max-height: 50px;
+        }
+        .content {
+            padding: 20px;
+            color: #333333;
+            line-height: 1.6;
+        }
+        .button-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            background-color: #0070ba;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #005ea6;
+        }
+        .transaction-details {
+            margin: 20px 0;
+            font-size: 14px;
+            color: #555555;
+        }
+        .transaction-details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .transaction-details li {
+            margin: 5px 0;
+        }
+        .footer {
+            padding: 15px;
+            font-size: 12px;
+            text-align: center;
+            color: #888888;
+            border-top: 1px solid #dddddd;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal Logo">
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <p>Dear [User Name],</p>
+            <p>You've escalated the following case to a claim. We'll contact <strong>Paypro Global, Inc.</strong> for more information and the seller has until <strong>March 17, 2024</strong> to respond. Most claims can be resolved within 30 days, but sometimes it may take longer.</p>
+            <p>We may need to contact you for more information during our review process. If we do, please respond within the requested timeframe, otherwise the case may be closed and decided in the seller's favor.</p>
+            <div class="button-container">
+                <a href="http://malicious-link.com/ClaimDetails" class="button">View the case details</a>
+            </div>
+
+            <!-- Transaction Details -->
+            <div class="transaction-details">
+                <p><strong>Transaction details</strong></p>
+                <ul>
+                    <li><strong>Case number:</strong> PP-D-56XXXX</li>
+                    <li><strong>Seller's name:</strong> Paypro Global, Inc.</li>
+                    <li><strong>Transaction amount:</strong> $620.00 USD</li>
+                    <li><strong>Transaction date:</strong> November 19, 2023</li>
+                    <li><strong>Your transaction ID:</strong> 7B544338XXXX</li>
+                </ul>
+            </div>
+            <p>To learn how we review and resolve claims, please refer to our User Agreement by clicking <a href="http://paypal.com/legal">Legal</a> at the bottom of any PayPal page.</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2024 PayPal. All rights reserved.</p>
+            <p>This email was sent to you as a notification of your recent activity. Please do not reply to this email. For support, visit <a href="http://paypal.com/support">PayPal Help Center</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
