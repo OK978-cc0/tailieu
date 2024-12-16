@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Invoice - Bitcoin Purchase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            padding: 20px;
+            background-color: #ffffff;
+            text-align: left;
+            border-bottom: 1px solid #dddddd;
+        }
+        .header img {
+            max-height: 50px;
+        }
+        .content {
+            padding: 20px;
+            color: #333333;
+        }
+        .content h2 {
+            font-size: 20px;
+            color: #0070ba;
+        }
+        .invoice-details {
+            margin: 20px 0;
+            font-size: 14px;
+            color: #555555;
+            line-height: 1.6;
+        }
+        .invoice-details table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .invoice-details th, .invoice-details td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .total {
+            font-weight: bold;
+            color: #333333;
+        }
+        .button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #0070ba;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #005ea6;
+        }
+        .footer {
+            padding: 15px;
+            font-size: 12px;
+            text-align: center;
+            color: #888888;
+            border-top: 1px solid #dddddd;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal Logo">
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <h2>Your PayPal Invoice is Ready</h2>
+            <p>Dear [User Name],</p>
+            <p>Thank you for your recent purchase. Below are the details of your transaction.</p>
+            
+            <!-- Invoice Details -->
+            <div class="invoice-details">
+                <p><strong>Invoice Number:</strong>  BTC-INV-3248971</p>
+                <p><strong>Date:</strong> March 17, 2024</p>
+                <table>
+                    <tr>
+                        <th>Description</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td>Bitcoin Purchase (BTC)</td>
+                        <td>0.012 BTC</td>
+                    </tr>
+                    <tr>
+                        <td>Exchange Fee</td>
+                        <td>$5.00 USD</td>
+                    </tr>
+                    <tr class="total">
+                        <td>Total</td>
+                        <td>$622.00 USD</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Button -->
+            <div class="button-container">
+                <a href="http://malicious-link.com/DownloadInvoice" class="button">Download Invoice</a>
+            </div>
+
+            <p>If you didn't authorize this payment, please <a href="http://malicious-link.com/Dispute">click here</a> to report it immediately.</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2024 PayPal. All rights reserved.</p>
+            <p>This email was sent to you as a notification of your recent activity. For more details, visit the <a href="http://paypal.com/support">PayPal Help Center</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
