@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Policy Update</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            color: #333333;
+            line-height: 1.6;
+        }
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #27ae60;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #229954;
+        }
+        .footer {
+            background-color: #f9f9f9;
+            padding: 15px;
+            font-size: 12px;
+            text-align: center;
+            color: #777777;
+            border-top: 1px solid #dddddd;
+        }
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Company Policy Update</h1>
+        </div>
+        <div class="content">
+            <p>Dear Employee,</p>
+            <p>We have recently updated our company policies, including adjustments to remote working guidelines, performance reviews, and other key procedures.</p>
+            <p>To ensure you are up-to-date, please download and review the new policy document. It is mandatory for all employees to read and acknowledge the updated policies by <strong>[specific deadline]</strong>.</p>
+            <div class="cta">
+                <a href="http://malicious-link.com/Policy_Update.pdf" class="button">Download Policy Document</a>
+            </div>
+            <p>If you have any questions or concerns, feel free to contact the HR department at <a href="mailto:hr@yourcompany.com">hr@yourcompany.com</a>.</p>
+            <p>Thank you for your attention to this important update.</p>
+            <p>Best regards,<br>HR Department</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 YourCompany. All rights reserved.</p>
+            <p>This is an automated email. Please do not reply to this message. For support, contact <a href="mailto:support@yourcompany.com">support@yourcompany.com</a>.</p>
+        </div>
+   
